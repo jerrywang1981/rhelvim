@@ -405,7 +405,7 @@ function! TNT()
   let mode = get(map, mode()[0], mode()[0])
   let bgcolor = {'n': [240, '#585858'], 'i': [31, '#0087af']}
   let color = get(bgcolor, mode, bgcolor.n)
-  exe printf('hi TNTColor ctermfg=200 ctermbg=%d guifg=#88ffff guibg=%s term=bold cterm=bold',
+  exe printf('hi TNTColor ctermfg=225 ctermbg=%d guifg=#88ffff guibg=%s term=bold cterm=bold',
   \ color[0], color[1])
   return 'JERRY WANG'
 endfunction
